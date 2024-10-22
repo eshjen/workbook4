@@ -13,7 +13,7 @@ function getAverage(scores) {
   }
   console.log(average / scores.length);
 }
-
+getAverage(myScores)
 
 // let MyScores = [92, 98, 84, 76, 89, 99, 100];
 // let yourScores = [82, 98, 94, 88, 92, 100, 100];
