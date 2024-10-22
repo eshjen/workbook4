@@ -12,4 +12,13 @@ for (let index = 0; index < lunch.length; index++) {
 total = total + element.price
 
 }
+let tax = total * 0.08;
+let tip = total * 0.18
+
+let totalDue = total + tax + tip;
+
+console.log("total: $" + total.toFixed(2))
+console.log("tax: $" + tax.toFixed(2))
+console.log("tip: $" + tip.toFixed(2) )
+
 
