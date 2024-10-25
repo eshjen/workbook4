@@ -8,3 +8,4 @@ function parsePartCode(code) {
   };
 }
 parsePartCode(code1);
+console.log(code1);
