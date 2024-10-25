@@ -27,6 +27,6 @@ function showDetails() {
 
   console.log(footballTeams);
   if (selectedTeam) {
-    detailsDiv.innerText = `${selectedTeam.code} (${selectedTeam.name}) was selected. They play ${selectedTeam.plays}.`;
+    detailsDiv.innerText = `You selected the ${selectedTeam.name} (${selectedTeam.code}) who play in ${selectedTeam.plays}.`;
   }
 }
