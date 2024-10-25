@@ -27,24 +27,65 @@
     </main>
     <script>
       "use strict";
+      const iPhones = [
+        {
+          id: 1,
+          model: "iPhone 15",
+          storageOptions: ["128GB", "256GB", "512GB"],
+          colors: ["Black", "Blue", "Pink", "Yellow", "White"],
+          releaseDate: "September 2023",
+        },
+        {
+          id: 2,
+          model: "iPhone 15 Plus",
+          storageOptions: ["128GB", "256GB", "512GB"],
+          colors: ["Black", "Blue", "Pink", "Yellow", "White"],
+          releaseDate: "September 2023",
+        },
+        {
+          id: 3,
+          model: "iPhone 15 Pro",
+          storageOptions: ["128GB", "256GB", "512GB", "1TB"],
+          colors: ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
+          releaseDate: "September 2023",
+        },
+        {
+          id: 4,
+          model: "iPhone 15 Pro Max",
+          storageOptions: ["256GB", "512GB", "1TB", "2TB"],
+          colors: ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
+          releaseDate: "September 2023",
+        },
+        {
+          id: 5,
+          model: "iPhone SE (3rd generation)",
+          storageOptions: ["64GB", "128GB", "256GB"],
+          colors: ["Midnight", "Starlight", "Product Red"],
+          releaseDate: "March 2022",
+        },
+      ];
       let Phones = document.getElementById("Phones");
-      let option1 = document.createElement("option");
-      option1.value = "1";
-      option1.innerText = "iPhone 16 Pro Max";
-      Phones.appendChild(option1);
+      // let option1 = document.createElement("option");
+      // option1.value = "1";
+      // option1.innerText = "iPhone 16 Pro Max";
+      // Phones.appendChild(option1);
 
-      let option1 = document.createElement("option");
-      option1.value = "2";
-      option1.innerText = "iPhone 15 Pro Max";
-      Phones.appendChild(option2);
+      // let option1 = document.createElement("option");
+      // option1.value = "2";
+      // option1.innerText = "iPhone 15 Pro Max";
+      // Phones.appendChild(option2);
 
+      // let option1 = document.createElement("option");
+      // option1.value = "3";
+      // option1.innerText = "iPhone SE";
+      // Phones.appendChild(option3);
 
-      let option1 = document.createElement("option");
-      option1.value = "3";
-      option1.innerText = "iPhone SE";
-      Phones.appendChild(option3);
-
-     
+      for (const iPhone of iPhones) {
+        let option = document.createElement("option");
+        option.value = iPhone.id;
+        option.innerText = iPhone.model;
+        Phones.appendChild(option);
+      }
     </script>
   </body>
 </html>
